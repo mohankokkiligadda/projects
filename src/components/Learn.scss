@@ -1,0 +1,49 @@
+// StatsRingCard.scss
+
+.custom-card {
+  background-color: #fff; // Change to your desired background color
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+
+  .custom-inner {
+    display: flex;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  .custom-label {
+    font-family: 'Greycliff CF', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .custom-label-xl {
+    @extend .custom-label;
+    font-size: 1.375rem;
+  }
+
+  .custom-lead {
+    @extend .custom-label;
+    font-size: 1.375rem;
+    margin-top: 1.875rem;
+  }
+
+  .custom-label-xs {
+    @extend .custom-label;
+    font-size: 0.875rem;
+    color: #6c757d; // Bootstrap's text-muted color
+  }
+
+  .custom-ring {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 575px) {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+}

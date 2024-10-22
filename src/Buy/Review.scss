@@ -1,0 +1,46 @@
+// Review.scss
+
+.review {
+    h6 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+  
+    .list-group {
+      margin-bottom: 1rem;
+  
+      .list-group-item {
+        border: none;
+        padding: 1rem;
+        justify-content: space-between;
+  
+        p {
+          font-size: 0.875rem;
+        }
+      }
+  
+      .list-group-item:last-child {
+        .fw-bold {
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .row {
+      .col-sm-6 {
+        h6 {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 0.875rem;
+        }
+  
+        .d-flex {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  

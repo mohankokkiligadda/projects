@@ -1,0 +1,555 @@
+    // .training-card-container {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+    // }
+
+    // .training-card-ed {
+    //     background-color: white;
+    //     padding: 20px;
+    //     border-radius: 8px;
+    //     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    //     margin: 20px;
+    //     max-width: calc(33% - 40px);
+    //     transition: box-shadow 0.3s;
+
+    //     &:hover {
+    //         background-color: #f0f0f0;
+    //         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    //     }
+
+    //     .training-card-divider {
+    //         cursor: pointer;
+    //         padding-bottom: 10px;
+    //         border-bottom: 1px solid #ccc;
+    //         margin-bottom: 10px;
+
+    //         h5 {
+    //             font-size: 1.2rem;
+    //             margin-bottom: 10px;
+    //             max-width: 100%;
+    //             word-wrap: break-word;
+    //         }
+
+    //         p {
+    //             font-size: 1rem;
+    //             margin: 0;
+    //         }
+    //     }
+
+
+
+    //     .training-card-body {
+    //         p {
+    //             font-size: 0.875rem;
+    //             margin: 5px 0;
+    //         }
+
+    //         .training-card-button {
+    //             margin-top: 10px;
+    //             padding: 5px 10px;
+    //             border: none;
+    //             border-radius: 0.25rem;
+    //             cursor: pointer;
+
+    //             &.checkout {
+    //                 background-color: #007bff;
+    //                 color: #fff;
+    //             }
+
+    //             &.bye {
+    //                 background-color: #dc3545;
+    //                 color: #fff;
+    //                 margin-left: 5px;
+    //             }
+    //         }
+
+    //         .training-card-text {
+    //             font-size: 12px;
+    //             color: #555;
+    //             margin-bottom: 4px;
+
+    //             span {
+    //                 &.start-date {
+    //                     color: #007bff;
+    //                 }
+
+    //                 &.end-date {
+    //                     color: #dc3545;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .training-modal {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgba(0, 0, 0, 0.5);
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     z-index: 999;
+    //     transition: opacity 0.3s ease-in-out;
+    //     opacity: 0;
+
+    //     &.show {
+    //         opacity: 1;
+    //     }
+
+    //     .training-modal-dialog {
+
+    //         position: relative;
+    //         top: 20%;
+    //         left: 25%;
+    //         background-color: #fff;
+    //         border-radius: 8px;
+    //         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    //         max-width: 700px;
+    //         width: 90%;
+
+    //         .training-modal-content {
+    //             padding: 20px;
+    //         }
+
+    //         .training-modal-header {
+    //             display: flex;
+    //             justify-content: space-between;
+    //             align-items: center;
+    //             margin-bottom: 20px;
+    //             padding: 20px;
+    //             background-color: #007bff;
+    //             color: #fff;
+    //             border-radius: 8px 8px 0 0;
+
+    //             h6 {
+    //                 font-size: 1.25rem;
+    //             }
+
+    //             .training-btn-close {
+    //                 background: none;
+    //                 border: none;
+    //                 cursor: pointer;
+    //                 font-size: 1.5rem;
+    //                 padding: 0;
+    //                 color: #fff;
+    //             }
+    //         }
+
+    //         .training-modal-body {
+    //             ul {
+    //                 list-style-type: none;
+    //                 padding: 0;
+
+    //                 li {
+    //                     margin-bottom: 20px;
+
+    //                     h6 {
+    //                         font-size: 1rem;
+    //                         margin-bottom: 10px;
+    //                     }
+
+    //                     p {
+    //                         font-size: 0.875rem;
+    //                         margin-bottom: 10px;
+    //                     }
+
+    //                     video {
+    //                         width: 100%;
+    //                         height: auto;
+    //                         margin-top: 10px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+
+    //         .training-modal-footer {
+    //             display: flex;
+    //             justify-content: flex-end;
+    //             margin-top: 20px;
+    //             padding: 20px;
+    //             background-color: #f5f5f5;
+    //             border-radius: 0 0 8px 8px;
+
+    //             .btn-secondary {
+    //                 background-color: #ccc;
+    //                 color: #333;
+    //                 border: none;
+    //                 border-radius: 5px;
+    //                 padding: 10px 20px;
+    //                 cursor: pointer;
+    //                 font-size: 1rem;
+    //                 transition: background-color 0.3s ease-in-out;
+
+    //                 &:hover {
+    //                     filter: brightness(1.2);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  .new-screen {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+  
+    .new-screen-left {
+      flex: 1; 
+      height: 530px !important;
+      padding: 10px;
+      background-color: #fff;
+      overflow-y: auto; 
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 0, 0, 0.176);
+    }
+  
+    .new-screen-right {
+      height: 500px;
+      flex: 1;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    }
+  
+    h6 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    .card-details {
+      margin-bottom: 15px;
+  
+      .outline-topic {
+        font-weight: bold;
+      }
+    }
+  
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+  
+      .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  
+
+
+
+
+
+
+
+// .training-card-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 20px;
+//   }
+  
+//   .training-card-ed {
+//     background-color: #f5f5f5;
+//     padding: 20px;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     transition: background-color 0.3s;
+//     width: 300px;
+  
+//     &:hover {
+//       background-color: #e0e0e0;
+//     }
+  
+//     .training-card-divider {
+//       display: flex;
+//       flex-direction: column;
+//       cursor: pointer;
+//     }
+  
+//     .training-card-title {
+//       font-size: 1.5rem;
+//       margin: 0;
+//     }
+  
+//     .training-card-text {
+//       font-size: 1rem;
+//       margin: 0;
+//     }
+  
+//     .training-card-body {
+//       margin-top: 10px;
+//       display: flex;
+//       flex-direction: column;
+//     }
+  
+//     .start-date,
+//     .end-date {
+//       font-weight: bold;
+//       margin-left: 5px;
+//     }
+  
+//     .training-card-button {
+//       margin-top: 10px;
+//       padding: 10px;
+//       background-color: #007bff;
+//       color: #fff;
+//       border: none;
+//       border-radius: 5px;
+//       cursor: pointer;
+//       font-size: 1rem;
+  
+//       &.checkout {
+//         background-color: #28a745;
+//       }
+  
+//       &.bye {
+//         background-color: #dc3545;
+//       }
+//     }
+//   }
+
+
+
+.training-card-container {
+    display: flex;
+    flex-wrap: wrap;
+   gap: 20px;
+}
+
+.training-card-ed {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    // max-width: calc(23% - 30px);
+    max-width: 280px;
+    transition: box-shadow 0.3s;
+
+
+    &:hover {
+        background-color: #ffffffa0;
+        box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.47);
+    }
+
+    .training-card-divider {
+        cursor: pointer;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+
+        h5 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            max-width: 100%;
+            word-wrap: break-word;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+
+
+
+    .training-card-body {
+        p {
+            font-size: 0.875rem;
+            margin: 5px 0;
+        }
+
+        .training-card-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+
+            &.checkout {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            &.go-to-cart{
+              background-color: #007bff;
+                color: #fff;
+            }
+
+            &.add-to-cart{
+              background-color: #28a745;
+              
+            }
+
+            &.buy {
+                background-color: #dc3545;
+                color: #fff;
+                margin-left: 5px;
+            }
+        }
+
+        .training-card-text {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 4px;
+
+            span {
+                &.start-date {
+                    color: #007bff;
+                }
+
+                &.end-date {
+                    color: #dc3545;
+                }
+            }
+        }
+    }
+}
+  
+  
+  .training-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+  
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .training-modal-dialog {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+  
+    .training-modal-content {
+      padding: 20px;
+    }
+  
+    .training-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  
+  .new-screen {
+    display: flex;
+  }
+  
+  .new-screen-left {
+    flex: 1;
+    padding: 20px;
+  
+    .course-outline-title {
+      font-size: 1.25rem;
+    }
+  
+    .course-outline-list {
+      list-style: none;
+      padding: 0;
+  
+      .card-details {
+        list-style: none;
+        padding: 10px 0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #f0f0f0;
+        }
+  
+        &.selected {
+          background-color: #007bff;
+          color: #fff;
+        }
+  
+        .outline-topic {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  .new-screen-right {
+    flex: 1;
+    padding: 20px;
+  
+    .course-videos-title {
+      font-size: 1.25rem;
+    }
+  
+    .video-container {
+      margin-top: 10px;
+  
+      .react-player {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .training-modal-footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1001;
+  
+  .training-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+  
+    &:hover {
+      filter: brightness(1.2);
+      background-color: #28a745;
+    }
+  }
+}
+
+.training-modal-hooter-bottom{
+    margin-bottom: 100%;
+}
+
+
+  

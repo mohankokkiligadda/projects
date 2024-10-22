@@ -1,0 +1,363 @@
+// // // Checkout.scss
+
+// // // Define variables for common styles
+// // $section-border-color: #ccc;
+// // $section-padding: 20px;
+// // $label-color: #333;
+// // $value-color: #333;
+
+// // // Apply styles to the container
+// // .checkout-container {
+// //   h2 {
+// //     margin-top: 20px;
+// //   }
+
+// //   .row {
+// //     .col-md-6 {
+// //       .section {
+// //         border: 1px solid $section-border-color;
+// //         padding: $section-padding;
+// //         margin-bottom: 20px;
+
+// //         h3 {
+// //           color: $label-color;
+// //           font-size: 18px;
+// //           margin-bottom: 10px;
+// //         }
+
+// //         label {
+// //           font-weight: bold;
+// //         }
+
+// //         .form-group {
+// //           label {
+// //             display: block;
+// //             margin-bottom: 5px;
+// //           }
+// //         }
+
+// //         .payment-methods {
+// //           label {
+// //             display: block;
+// //             margin-right: 15px;
+// //           }
+// //         }
+
+// //         .order-details {
+// //           p {
+// //             font-size: 18px;
+// //             font-weight: bold;
+// //           }
+
+// //           .price {
+// //             display: flex;
+// //             justify-content: space-between;
+// //             margin-top: 5px;
+
+// //             .label {
+// //               color: $label-color;
+// //             }
+
+// //             .value {
+// //               color: $value-color;
+// //             }
+// //           }
+// //         }
+// //       }
+// //     }
+
+// //     .col-md-6:last-child {
+// //       .summary {
+// //         h3 {
+// //           color: $label-color;
+// //           font-size: 18px;
+// //           margin-bottom: 10px;
+// //         }
+
+// //         .price {
+// //           display: flex;
+// //           justify-content: space-between;
+// //           margin-top: 5px;
+
+// //           .label {
+// //             color: $label-color;
+// //           }
+
+// //           .value {
+// //             color: $value-color;
+// //           }
+
+// //           .total {
+// //             margin-top: 10px;
+// //           }
+// //         }
+
+// //         .terms {
+// //           margin-top: 20px;
+// //           font-size: 14px;
+
+// //           a {
+// //             color: #007bff;
+// //             text-decoration: none;
+// //           }
+// //         }
+
+// //         .btn-primary {
+// //           margin-top: 20px;
+// //         }
+
+// //         .guarantee {
+// //           margin-top: 20px;
+// //           font-size: 14px;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+
+
+
+
+
+
+
+
+
+// // Checkout.scss
+
+// .checkout {
+//   header {
+//     background-color: #007bff;
+//     .navbar-brand {
+//       color: #fff;
+//       font-size: 1.5rem;
+//       text-decoration: none;
+//       &:hover {
+//         text-decoration: none;
+//       }
+//     }
+//   }
+
+//   main.container {
+//     margin-top: 20px;
+//   }
+
+//   .card {
+//     border: none;
+//     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//     .card-body {
+//       h1.card-title {
+//         font-size: 2rem;
+//         color: #333;
+//         margin-bottom: 20px;
+//       }
+
+//       .step-container {
+//         ul.nav.nav-pills {
+//           display: flex;
+//           justify-content: center;
+
+//           .nav-item {
+//             a.nav-link {
+//               &.active {
+//                 background-color: #007bff;
+//                 color: #fff;
+//               }
+//               border-radius: 0;
+//               font-weight: bold;
+//               font-size: 1rem;
+//               padding: 10px 20px;
+//               margin: 0 10px;
+//               transition: background-color 0.2s;
+
+//               &:hover {
+//                 background-color: #0056b3;
+//                 color: #fff;
+//                 text-decoration: none;
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       .thank-you {
+//         text-align: center;
+//         margin-top: 20px;
+
+//         h2 {
+//           font-size: 1.5rem;
+//           color: #333;
+//           margin-bottom: 10px;
+//         }
+
+//         p {
+//           font-size: 1rem;
+//           color: #555;
+//         }
+//       }
+
+//       .step-content {
+//         margin-top: 20px;
+//         .buttons {
+//           display: flex;
+//           justify-content: flex-end;
+
+//           button.btn {
+//             margin-left: 10px;
+//             font-weight: bold;
+//           }
+
+//           button.btn-secondary {
+//             background-color: #f5f5f5;
+//             color: #333;
+//             border-color: #ccc;
+
+//             &:hover {
+//               background-color: #e5e5e5;
+//             }
+//           }
+
+//           button.btn-primary {
+//             background-color: #007bff;
+//             border-color: #007bff;
+
+//             &:hover {
+//               background-color: #0056b3;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // footer.text-center {
+//   //   margin-top: 20px;
+//   //   padding: 10px;
+//   //   background-color: #f5f5f5;
+//   //   color: #333;
+//   //   font-size: 0.875rem;
+//   // }
+// }
+
+
+// Checkout.scss
+
+.checkout {
+  header {
+    // background-color: #007bff;
+    .navbar-brand {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  main.container {
+    margin-top: 20px;
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    .card-body {
+      h1.card-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .step-container {
+        ul.nav.nav-pills {
+          display: flex;
+          justify-content: center;
+
+          .nav-item {
+            a.nav-link {
+              &.active {
+                // background-color: #007bff;
+                color: #fff;
+              }
+              border-radius: 0;
+              // font-weight: bold;
+              font-size: 1rem;
+              padding: 10px 20px;
+              margin: 0 10px;
+              transition: background-color 0.2s, color 0.2s;
+
+              &:hover {
+                // background-color: #0056b3;
+                color: #fff;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      .thank-you {
+        text-align: center;
+        margin-top: 20px;
+
+        h2 {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #555;
+        }
+      }
+
+      .step-content {
+        margin-top: 20px;
+        .buttons {
+          display: flex;
+          justify-content: flex-end;
+
+          button.btn {
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:focus {
+              box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+            }
+          }
+
+          button.btn-secondary {
+            background-color: #f5f5f5;
+            color: #333;
+            border-color: #ccc;
+
+            &:hover {
+              background-color: #e5e5e5;
+            }
+          }
+
+          button.btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer.text-center {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,146 @@
+// $primary-color: #007bff;
+// $secondary-color: #343a40;
+// $background-color: #f5f5f5;
+// $border-radius: 5px;
+
+// .video-player-udemy {
+//   display: flex;
+//   background-color: $background-color;
+//   border-radius: $border-radius;
+//   overflow: hidden;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//   font-family: Arial, sans-serif;
+ 
+
+//   .course-list {
+//     flex: 1;
+//     padding: 20px;
+//     background-color: white;
+
+//     .course-card {
+//       padding: 15px;
+//       margin-bottom: 15px;
+//       border: 1px solid $background-color;
+//       border-radius: $border-radius;
+//       cursor: pointer;
+//       transition: background-color 0.3s ease;
+//       float: left;
+//   width: 50%;
+
+//       &:hover {
+//         background-color: $background-color;
+//       }
+
+//       &.active {
+//         background-color: $primary-color;
+//         color: white;
+//       }
+
+//       h3 {
+//         margin: 0;
+//         font-size: 18px;
+//       }
+
+//       p {
+//         margin: 5px 0;
+//         font-size: 14px;
+//         color: $secondary-color;
+//       }
+//     }
+//   }
+
+//   .content {
+//     display: flex;
+//     flex: 2;
+//     background-color: white;
+
+//     .main-video {
+//       flex: 1;
+//       padding: 20px;
+
+//       video {
+//         width: 100%;
+//         height: auto;
+//       }
+//     }
+    
+
+//     .video-list,
+//     .topic-list {
+//       flex: 1;
+//       padding: 20px;
+
+//       ul {
+//         list-style: none;
+//         padding: 0;
+
+//         li {
+//           padding: 10px 0;
+//           cursor: pointer;
+//           transition: background-color 0.3s ease;
+
+//           &:hover {
+//             background-color: $background-color;
+//           }
+
+//           &.active {
+//             background-color: $primary-color;
+//             color: white;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   &.course-selected {
+//     .course-list {
+//       display: none;
+//     }
+
+//     .content {
+//       flex: 1;
+//     }
+//   }
+// }
+
+
+
+
+
+/* VideoPlayer.scss */
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-dialog {
+  max-width: 80%; /* Adjust the width as needed */
+}
+
+.modal-content {
+  background-color: transparent; /* Remove the default modal background */
+  border: none;
+}
+
+.modal-header {
+  border: none;
+}
+
+.embed-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.embed-responsive-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add your custom styles here if needed */

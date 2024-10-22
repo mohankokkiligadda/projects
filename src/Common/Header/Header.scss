@@ -1,0 +1,418 @@
+<<<<<<< HEAD
+$header-height: 60px;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .brand-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      // color: #0056b3;
+    }
+  
+
+
+}
+
+  .navbar-links {
+    .nav-link {
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &.active {
+        background-color: #b3d1ff;
+        color: #007bff;
+      }
+    }
+  }
+  .navbar-links {
+    padding-left  : 69%;
+=======
+
+.cart-nav-link {
+  color: #161617;
+  text-decoration: none;
+  // gap: 10px;
+  margin-right: 20px;
+  padding-left: 270px;
+
+  svg{
+    font-size: 30px;
+  }
+  
+
+  &:hover {
+    color: #007bff !important;
+    text-decoration: none;
+  }
+}
+
+.nav-link{
+  &:hover{
+    color: #007bff !important;
+  }
+}
+
+
+
+.header {
+  // background-color: rgba(255, 255, 255, 0.573) !important;
+  //background-color: rgba(100, 100, 101, 0.998) !important;
+  // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  // border-bottom: 1px solid rgb(115, 111, 111);
+  background-color: #ffffff !important;
+ 
+  // padding: 0 !important;
+  // padding-bottom: 10px !important;
+  // margin-top: 10px !important;
+  // padding-top: -40px !important;
+  // margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 0;
+
+
+  
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .brand-logo {
+      // border: 1px solid red;
+      border-right: 1px solid #e1e0e0;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .features-dropdown-toggle,
+      .my-courses-dropdown-toggle,
+      .all-courses-dropdown-toggle {
+        position: relative;
+        list-style: none;
+
+        color: #333;
+
+        a {
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        &:hover {
+          color: #007bff !important;
+        }
+
+        .features-dropdown-menu,
+        .my-courses-dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 1000;
+          display: none;
+          flex-direction: column;
+          background-color: #ffffff;
+          border: 1px solid #ccc;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+
+          a {
+            color: #333;
+            text-decoration: none;
+
+            &:hover {
+              // color: #3b8adfb5;
+            }
+          }
+        }
+
+        &:hover .features-dropdown-menu,
+        &:hover .my-courses-dropdown-menu {
+          display: flex;
+        }
+      }
+
+      .feature-link,
+      .course-link,
+      .all-course-link {
+        color: #333;
+        text-decoration: none;
+
+
+        &.active-link {
+          // color: #007bff;
+        }
+
+        &.dropdown-item {
+          color: #333;
+          text-decoration: none;
+          
+
+          &:hover {
+            // color: #007bff;
+            // color: #fff;
+          }
+        }
+      }
+
+      .login-button {
+        position: absolute;
+        // left: 0;
+        right: 10%;
+        top: 19%;
+        // margin-left: 270px;
+        a {
+          color: #fff;
+          background-color: #007bff;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 20px;
+          text-decoration: none;
+          cursor: pointer;
+          
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.features-link,
+.my-courses-link {
+  color: #333333b5 !important;
+  text-decoration: none !important;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+
+
+
+
+
+/* UserProfile.scss */
+
+.user-profile {
+  display: inline-block;
+  position: relative;
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    // padding: 10px;
+    cursor: pointer;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid rgb(16, 121, 162);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .profile-actions {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 10px;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 30px;
+      width: 100%;
+
+      &:hover {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+      }
+    }
+
+    div{
+      text-decoration: none;
+      color: #333;
+      padding: 5px 30px;
+      width: 100%;
+
+      &:hover {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+      }
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  &:hover .profile-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+>>>>>>> bfd2c72 (Adding Header Changes)
+  }
+}
+
+
+
+<<<<<<< HEAD
+
+// $header-height: 60px;
+
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   height: $header-height;
+//   padding: 0 20px;
+//   background-color: #f9f9f9;
+//   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+//   .brand-logo {
+//     font-size: 25px;
+//     font-weight: bold;
+//     color: #007bff;
+//     text-decoration: none;
+
+//     &:hover {
+//       // color: #0056b3;
+//     }
+//   }
+
+//   .navbar-links {
+//     flex: 1; // Allow the links to take the available space
+//     display: flex;
+//     justify-content: flex-end; // Push the links to the right
+
+//     .nav-link {
+//       padding: 8px 12px;
+//       border-radius: 4px;
+//       text-decoration: none;
+//       color: #000;
+//       font-size: 14px;
+//       font-weight: 500;
+
+//       &:hover {
+//         background-color: #f0f0f0;
+//       }
+
+//       &.active {
+//         background-color: #b3d1ff;
+//         color: #007bff;
+//       }
+//     }
+//   }
+// }
+
+// // Media queries for responsiveness
+// @media (max-width: 768px) {
+//   .header {
+//     padding: 0 10px; // Reduce padding for smaller screens
+//     flex-direction: column; // Stack items vertically
+//     align-items: flex-start; // Align items to the left
+//     text-align: center; // Center align text
+//   }
+
+//   .brand-logo {
+//     font-size: 20px; // Decrease font size for smaller screens
+//     margin-bottom: 10px; // Add some space below the logo
+    
+//   }
+
+//   .navbar-links {
+//     width: 100%; // Take full width
+//     justify-content: center; // Center align links
+//     order: 1; // Move links below the logo
+//     margin-top: 10px; // Add some space above the links
+
+//     .nav-link {
+//       padding: 6px 10px; // Decrease padding for smaller screens
+//       font-size: 12px; // Decrease font size for smaller screens
+//     }
+//   }
+// }
+=======
+.user-profile {
+  // Your user profile styles here
+}
+
+.avatar {
+  // Your avatar styles here
+}
+
+.profile-actions {
+  // Your profile actions container styles here
+
+  p {
+    font-size: 1.2rem; // Adjust the font size as needed
+    margin-bottom: 1rem; // Add some spacing below the name
+    color: #333;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    svg {
+      margin-right: 0.5rem; // Add space between the icon and text
+      color: #0056b3;
+    }
+  }
+
+  .header-logout {
+    cursor: pointer;
+    svg{
+      color: #0056b3;
+    }
+  }
+
+ 
+}
+>>>>>>> bfd2c72 (Adding Header Changes)
